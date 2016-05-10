@@ -46,10 +46,10 @@ namespace PastebincaAPI
         }
 
         /// <summary>
-        /// Send the Paste with all the data you give it
+        /// Send the Paste with all the data you gave
         /// </summary>
         /// <param name="content">The body of your Paste</param>
-        /// <param name="name">The title of you Paste</param>
+        /// <param name="name">The title of your Paste</param>
         /// <param name="description">The Description of your Paste</param>
         /// <returns>The URL to reach your Paste</returns>
         public string SendPast(string content, string name, string description, PasteContentType type, Expiration expiration)
@@ -83,7 +83,7 @@ namespace PastebincaAPI
         }
 
         /// <summary>
-        /// The the postData ready and encode it to data
+        /// Set the postData ready and encodes it to data
         /// </summary>
         /// <param name="content">The content of your Paste</param>
         /// <param name="name">The name of your Paste</param>
@@ -102,7 +102,7 @@ namespace PastebincaAPI
         }
 
         /// <summary>
-        /// Setup the HttWebRequest with the data to be submited
+        /// Setup the HttWebRequest with the data to be submitted
         /// </summary>
         private void SetRequest()
         {
@@ -124,7 +124,7 @@ namespace PastebincaAPI
         }
 
         /// <summary>
-        /// Get the response after the data was submited
+        /// Get the response after the data was submitted
         /// </summary>
         /// <returns>The Raw data (e.g: SUCCESS:1234567)</returns>
         private string GetResponse()
@@ -185,7 +185,7 @@ namespace PastebincaAPI
     }
 
     /// <summary>
-    /// This is the enum containing all the diferents durations for your Paste
+    /// This is the enum containing all the differents durations for your Paste
     /// </summary>
     /// used as follow in the code
     /// <code>string expiration = Expiration.Never.ToDescriptionString();</code>
